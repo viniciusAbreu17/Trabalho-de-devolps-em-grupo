@@ -7,11 +7,9 @@ botaoDestaque.addEventListener("click", () => {
 });
 formContato.addEventListener("submit", (evento) => {
   evento.preventDefault();
-  const nome = document.querySelector("#nome").value;
-  resposta.textContent = `Obrigado pelo contato, ${nome}!`;
-});
 
 // Pega os valores dos campos
+    const nome = document.querySelector("#nome").value;
     const email = document.querySelector("#email").value;
     const mensagem = document.querySelector("#mensagem").value;
 
