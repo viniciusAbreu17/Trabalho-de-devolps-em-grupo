@@ -13,7 +13,7 @@ Evoluir uma página web existente por meio de trabalho colaborativo.
 Gustavo Silva de Souza: ReadMe
 Vitor Marques Fernandes A. Pedreira: HTML
 Lucas Carvalho do Nascimento: CSS
-Matheus Portes Vilel: JavaScript
+Mateus Portes Vilel: JavaScript
 Vinicius Abreu Gondariz: Líder da equipe
 
 Principais mudanças:
