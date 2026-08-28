@@ -27,7 +27,7 @@ body {
 }
 
 #botaoDestaque:hover {
-  background: #00537a;
+  background: #620096;
   transform: scale(1.1);
 }
 
@@ -43,23 +43,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  background: #b5b5b5;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 18px;
   border-radius: 10px;
-  background: #ffffff;
-  transition: transform 0.3s ease,
-              background-color 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-.card:hover {
-  background-color: #e0e0e0;
-  color: #b5b5b5;
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #d3d3d3;
 }
 
 form {
@@ -82,7 +73,6 @@ form button {
   color: white;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
 }
 
 @media (max-width: 700px) {
