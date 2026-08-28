@@ -21,6 +21,10 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+.botao:hover {
+  background-color: #620096;
+  transform: scale(1.1);
+}
 .secao {
   width: min(1000px, 92%);
   margin: 32px auto;
