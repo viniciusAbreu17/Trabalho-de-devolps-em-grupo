@@ -24,7 +24,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
 
-  /* Efeito suave no botão */
+ 
   transition: all 0.3s ease;
 }
 
@@ -54,11 +54,11 @@ body {
   border-radius: 10px;
   background: #ffffff;
 
-  /* Animação suave dos cards */
+ 
   transition: all 0.3s ease;
 }
 
-/* Quando passar o mouse no card */
+
 .card:hover {
   background: #e8f6fa;
   transform: scale(1.03);
@@ -87,7 +87,6 @@ form button {
   border-radius: 8px;
   cursor: pointer;
 
-  /* Animação suave */
   transition: all 0.3s ease;
 }
 
