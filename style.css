@@ -27,7 +27,7 @@ body {
 }
 
 #botaoDestaque:hover {
-  background: #620096;
+  background: purple;
   transform: scale(1.1);
 }
 
