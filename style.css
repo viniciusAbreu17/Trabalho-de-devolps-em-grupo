@@ -43,14 +43,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  background: #b5b5b5;
+  background: white;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 18px;
   border-radius: 10px;
-  background: #d3d3d3;
+  background: gray;
 }
 
 form {
