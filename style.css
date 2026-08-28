@@ -50,8 +50,9 @@ body {
   border: 1px solid #ddd;
   padding: 18px;
   border-radius: 10px;
-  background: gray;
+  background: #d3d3d3;
 }
+
 
 form {
   display: grid;
