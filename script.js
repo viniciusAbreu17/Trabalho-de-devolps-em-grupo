@@ -2,47 +2,49 @@ const botaoDestaque = document.querySelector("#botaoDestaque");
 const servicos = document.querySelector("#servicos");
 const formContato = document.querySelector("#formContato");
 const resposta = document.querySelector("#resposta");
+
+// Botão "Ver serviços"
 botaoDestaque.addEventListener("click", () => {
-  servicos.scrollIntoView({ behavior: "smooth" });
-});
-formContato.addEventListener("submit", (evento) => {
-  evento.preventDefault();
-  const nome = document.querySelector("#nome").value;
-  resposta.textContent = `Obrigado pelo contato, ${nome}!`;
+    servicos.scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
- // Verifica se algum campo está vazio
+// Formulário de contato
+formContato.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+
+    const nome = document.querySelector("#nome").value.trim();
+    const assunto = document.querySelector("#assunto").value.trim();
+    const mensagem = document.querySelector("#mensagem").value.trim();
+
+    // Verifica se algum campo está vazio
     if (nome === "" || assunto === "" || mensagem === "") {
         alert("Por favor, preencha todos os campos!");
         return;
     }
 
-    // Se todos os campos estiverem preenchidos
-    alert("Formulário enviado com sucesso!");
-
-    // Mostra mensagem na página
+    // Mostra mensagem de sucesso
     resposta.textContent = `Obrigado pelo contato, ${nome}!`;
 
-    // Limpa os campos do formulário
+    // Abre o Gmail
+    abrirGmail(nome, assunto, mensagem);
+
+    // Limpa os campos
     formContato.reset();
 });
-function abrirGmail() {
-    var destinatario = 'lesilva.andrade0804@gmail.com';
-    var mensagem = document.getElementById('mensagem').value;
-    var assunto = document.getElementById('assunto').value;
- 
-    const url = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(destinatario) + 
-                "&su=" + encodeURIComponent(assunto) + 
-                "&body=" + encodeURIComponent(mensagem);
- 
-    window.open(url, "_blank");
-    $.toast({
-        heading: 'Guia aberta!',
-        text: 'Uma guia foi aberta para o envio do email',
-        showHideTransition: 'fade',
-        icon: 'success',
-        bgColor: "#8A2BE2",
-        hideAfter: 15000,
-        loaderBg: '#87ceeb',
-    });
 
+// Abre o Gmail com os dados do formulário
+function abrirGmail(nome, assunto, mensagem) {
+    const destinatario = "lesilva.andrade0804@gmail.com";
+
+    const corpo = `Nome: ${nome}\n\nMensagem:\n${mensagem}`;
+
+    const url =
+        "https://mail.google.com/mail/?view=cm&fs=1" +
+        "&to=" + encodeURIComponent(destinatario) +
+        "&su=" + encodeURIComponent(assunto) +
+        "&body=" + encodeURIComponent(corpo);
+
+    window.open(url, "_blank");
+}
