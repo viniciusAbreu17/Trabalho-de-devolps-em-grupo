@@ -20,7 +20,15 @@ body {
   padding: 12px 18px;
   border-radius: 8px;
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
+
+.topo button:hover {
+  background: #ff3399;
+  transform: scale(1.08);
+}
+
 .secao {
   width: min(1000px, 92%);
   margin: 32px auto;
