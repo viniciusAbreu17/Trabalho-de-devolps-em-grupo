@@ -9,7 +9,6 @@ body {
   color: #1d1d1f;
 }
 
-
 .topo {
   background: #00537a;
   color: white;
@@ -17,18 +16,18 @@ body {
   text-align: center;
 }
 
-.topo button {
+#botaoDestaque {
   background: #e6007e;
   color: white;
   border: none;
   padding: 12px 18px;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.topo button:hover {
-  background-color: #ff4da6;
+#botaoDestaque:hover {
+  background: #ff4da6;
   transform: scale(1.1);
 }
 
@@ -40,33 +39,19 @@ body {
   border-radius: 12px;
 }
 
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   background: #b5b5b5;
-  padding: 10px;
-  border-radius: 12px;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 18px;
   border-radius: 10px;
-  background: #ffffff;
-  transition: transform 0.3s ease,
-              background-color 0.3s ease,
-              box-shadow 0.3s ease;
+  background: #d3d3d3;
 }
-
-.card:hover {
-  background-color: #e0e0e0;
-  color: #1d1d1f;
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
 
 form {
   display: grid;
@@ -88,9 +73,7 @@ form button {
   color: white;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
 }
-
 
 @media (max-width: 700px) {
   .cards {
