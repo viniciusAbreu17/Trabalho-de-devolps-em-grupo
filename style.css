@@ -36,6 +36,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  background: #b5b5b5;
 }
 .card {
   border: 1px solid #ddd;
