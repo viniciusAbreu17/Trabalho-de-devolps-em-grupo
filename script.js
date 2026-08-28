@@ -11,6 +11,11 @@ formContato.addEventListener("submit", (evento) => {
   resposta.textContent = `Obrigado pelo contato, ${nome}!`;
 });
 
+// Pega os valores dos campos
+    const email = document.querySelector("#email").value;
+    const mensagem = document.querySelector("#mensagem").value;
+
+
  // Verifica se algum campo está vazio
     if (nome === "" || email === "" || mensagem === "") {
         alert("Por favor, preencha todos os campos!");
