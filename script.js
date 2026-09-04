@@ -36,7 +36,7 @@ formContato.addEventListener("submit", (evento) => {
 
 // Abre o Gmail com os dados do formulário
 function abrirGmail(nome, assunto, mensagem) {
-    const destinatario = "lesilva.andrade0804@gmail.com";
+    const destinatario = "empresaReal@gmail.com";
 
     const corpo = `Nome: ${nome}\n\nMensagem:\n${mensagem}`;
 
