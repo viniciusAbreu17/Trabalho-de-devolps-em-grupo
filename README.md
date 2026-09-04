@@ -11,6 +11,7 @@ Evoluir uma página web existente por meio de trabalho colaborativo.
 ## Equipe
 
 Gustavo Silva de Souza: ReadMe
+Pedro Lucas da Silva Barreto: Documentação
 Vitor Marques Fernandes A. Pedreira: HTML
 Lucas Carvalho do Nascimento: CSS
 Mateus Portes Vilel: JavaScript
