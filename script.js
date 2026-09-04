@@ -33,21 +33,3 @@ formContato.addEventListener("submit", (evento) => {
   // Limpa os campos
   formContato.reset();
 });
-
-// Abre o Gmail com os dados do formulário
-function abrirGmail(nome, assunto, mensagem) {
-  const destinatario = "empresaReal@gmail.com";
-
-  const corpo = `Nome: ${nome}\n\nMensagem:\n${mensagem}`;
-
-  const url =
-    "https://mail.google.com/mail/?view=cm&fs=1" +
-    "&to=" +
-    encodeURIComponent(destinatario) +
-    "&su=" +
-    encodeURIComponent(assunto) +
-    "&body=" +
-    encodeURIComponent(corpo);
-
-  window.open(url, "_blank");
-}
